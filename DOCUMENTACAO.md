@@ -32,3 +32,39 @@ A geração de relatórios financeiros é uma das funcionalidades mais important
 ## Modelo de Negócio
 O modelo de negócio do Sistema Mugiwara será baseado em uma combinação de licenciamento por assinatura (Software as a Service - SaaS) e personalização sob demanda. As empresas pagarão uma taxa mensal ou anual com base no tamanho da organização e na quantidade de usuários ativos. Haverá também a opção de personalização e implementação de módulos adicionais mediante um custo extra, garantindo flexibilidade para diferentes necessidades empresariais. O suporte técnico e as atualizações de segurança serão incluídos no plano de assinatura, enquanto serviços premium, como consultoria financeira e auditoria de processos, estarão disponíveis como serviços adicionais.
 
+# Diagrama de Atividades
+
+```mermaid
+graph TD
+    Start([Início]) --> Login[Login no Sistema]
+    Login --> |Sucesso| ModuleSelection{Selecionar Módulo?}
+    ModuleSelection --> |Contas a Pagar| AccountsPayable[Visualizar Contas a Pagar]
+    ModuleSelection --> |Contas a Receber| AccountsReceivable[Visualizar Contas a Receber]
+    ModuleSelection --> |Fluxo de Caixa| CashFlow[Visualizar Fluxo de Caixa]
+    ModuleSelection --> |Relatórios Financeiros| FinancialReports[Visualizar Relatórios]
+
+    AccountsPayable --> ApprovalNeeded{Aprovação Necessária?}
+    ApprovalNeeded --> |Sim| ManagerApproval[Solicitar Aprovação]
+    ApprovalNeeded --> |Não| ProceedToPayment[Realizar Pagamento]
+    ManagerApproval --> ProceedToPayment
+    ProceedToPayment --> UpdateStatus[Atualizar Status da Conta]
+
+    AccountsReceivable --> PaymentReceived{Pagamento Recebido?}
+    PaymentReceived --> |Sim| RegisterPayment[Registrar Pagamento]
+    PaymentReceived --> |Não| KeepPending[Manter Pendência]
+    RegisterPayment --> UpdateStatusReceivable[Atualizar Status de Recebível]
+
+    FinancialReports --> ReportType{Selecionar Tipo de Relatório?}
+    ReportType --> BalanceSheet[Balanço Patrimonial]
+    ReportType --> IncomeStatement[Demonstração de Resultados]
+    ReportType --> CashFlowReport[Relatório de Fluxo de Caixa]
+    BalanceSheet --> GenerateReport[Gerar Relatório]
+    IncomeStatement --> GenerateReport
+    CashFlowReport --> GenerateReport
+    GenerateReport --> Export[Exportar como PDF/Excel]
+
+    UpdateStatus --> End[Logout ou Sair]
+    UpdateStatusReceivable --> End
+    CashFlow --> End
+    Export --> End
+```
