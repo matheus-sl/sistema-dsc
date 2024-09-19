@@ -74,36 +74,36 @@ graph TD
 
 ### Contas a Pagar
 
-- CRUD de Fornecedores: Permitir a inclusão, edição e exclusão de fornecedores.
-- CRUD de Despesas: Registrar despesas com detalhes como data, valor, categoria e fornecedor.
-- Pagamento de Contas: Facilitar a execução de pagamentos, possibilitando integração com sistemas bancários para conciliação automática.
+1. CRUD de Fornecedores: Permitir a inclusão, edição e exclusão de fornecedores.
+2. CRUD de Despesas: Registrar despesas com detalhes como data, valor, categoria e fornecedor.
+3. Pagamento de Contas: Facilitar a execução de pagamentos, possibilitando integração com sistemas bancários para conciliação automática.
 
 ### Contas a Receber
 
-- CRUD de Clientes: Incluir, editar e excluir informações de clientes.
-- CRUD de Receitas: Registrar receitas com detalhes como data, valor, categoria e cliente.
-- Registro de Pagamentos: Permitir o registro e conciliação de pagamentos recebidos, com integração para facilitar a conciliação bancária.
+4. CRUD de Clientes: Incluir, editar e excluir informações de clientes.
+5. CRUD de Receitas: Registrar receitas com detalhes como data, valor, categoria e cliente.
+6. Registro de Pagamentos: Permitir o registro e conciliação de pagamentos recebidos, com integração para facilitar a conciliação bancária.
 
 ### Fluxo de Caixa
 
-- Visão Geral do Fluxo de Caixa: Exibir um resumo das entradas e saídas de caixa.
-- Projeção de Fluxo de Caixa: Permitir a criação de previsões baseadas em lançamentos futuros.
+7. Visão Geral do Fluxo de Caixa: Exibir um resumo das entradas e saídas de caixa.
+8. Projeção de Fluxo de Caixa: Permitir a criação de previsões baseadas em lançamentos futuros.
 
 ### Relatórios Financeiros
 
-- Geração de Relatórios: Produzir balanços patrimoniais, demonstrações de resultados e análises de fluxo de caixa.
-- Exportação de Relatórios: Oferecer a opção de exportar relatórios em formatos como PDF e Excel.
+9. Geração de Relatórios: Produzir balanços patrimoniais, demonstrações de resultados e análises de fluxo de caixa.
+10. Exportação de Relatórios: Oferecer a opção de exportar relatórios em formatos como PDF e Excel.
 
 ### Automação de Processos
 
-- Geração de Relatórios: Automatizar a criação de relatórios financeiros.
-- Conciliação Bancária: Automatizar a conciliação de extratos bancários com os lançamentos financeiros.
-- Pagamentos Eletrônicos: Facilitar a realização de pagamentos eletrônicos diretamente pelo sistema.
+11. Geração de Relatórios: Automatizar a criação de relatórios financeiros.
+12. Conciliação Bancária: Automatizar a conciliação de extratos bancários com os lançamentos financeiros.
+13. Pagamentos Eletrônicos: Facilitar a realização de pagamentos eletrônicos diretamente pelo sistema.
 
 ### Integração com Sistemas Bancários
 
-- Importação de Extratos: Integrar com sistemas bancários para importar extratos automaticamente.
-- Registro de Recebimentos e Pagamentos: Facilitar o registro e a conciliação de transações bancárias no sistema.
+14. Importação de Extratos: Integrar com sistemas bancários para importar extratos automaticamente.
+15. Registro de Recebimentos e Pagamentos: Facilitar o registro e a conciliação de transações bancárias no sistema.
 
 ## Requisitos Não Funcionais
 
@@ -135,3 +135,140 @@ graph TD
 ### Regulamentação
 
 - Conformidade: Assegurar que o sistema esteja em conformidade com as regulamentações financeiras e fiscais vigentes.
+
+# Diagramas e Especificação de Requisitos
+
+|RF1. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF2. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF3. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF4. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF5. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF6. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF7. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF8. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF9. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF10. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF11. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF12. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF13. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF14. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
+
+|RF15. CRUD de Fornecedores|
+|-----------------------|
+|Descrição: |
+|Fontes: |
+|Usuários: |
+|Informações de entrada: |
+|Informações de saída: |
+|Requisitos não funcionais: |
