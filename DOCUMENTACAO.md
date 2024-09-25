@@ -136,7 +136,7 @@ graph TD
 
 - Conformidade: Assegurar que o sistema esteja em conformidade com as regulamentações financeiras e fiscais vigentes.
 
-# Diagramas e Especificação de Requisitos
+# Detalhamento dos Requisitos
 
 |RF1. CRUD de Fornecedores|
 |-----------------------|
