@@ -219,56 +219,56 @@ graph TD
 |Informações de saída: Relatórios financeiros completos.|
 |Requisitos não funcionais: Formatação padrão de relatórios, facilidade de leitura.|
 
-|RF10. CRUD de Fornecedores|
+|RF10. Exportação de relatórios|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Oferecer a opção de exportar relatórios em formatos como PDF e Excel.|
+|Fontes:  Dados financeiros consolidados.|
+|Usuários: Administradores, gestores financeiros.|
+|Informações de entrada: Seleção de formato de exportação, período.|
+|Informações de saída: Relatório exportado em formato escolhido.|
+|Requisitos não funcionais: Exportação rápida.|
 
-|RF11. CRUD de Fornecedores|
+|RF11. Geração Automática de Relatórios|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Automatizar a criação de relatórios financeiros com base em intervalos de tempo predefinidos.|
+|Fontes: Registros financeiros, fluxo de caixa.|
+|Usuários: Gestores financeiros, administradores.|
+|Informações de entrada: Parâmetros de relatórios (frequência, tipo).|
+|Informações de saída: Relatórios gerados automaticamente.|
+|Requisitos não funcionais: Automação confiável, baixo consumo de recursos.|
 
-|RF12. CRUD de Fornecedores|
+|RF12. Conciliação Bancária|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Automatizar a conciliação de extratos bancários com os lançamentos financeiros do sistema.|
+|Fontes: Bancos, registros financeiros.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Extratos bancários, lançamentos no sistema.|
+|Informações de saída: Lançamentos conciliados automaticamente.|
+|Requisitos não funcionais: Alta precisão, segurança na integração bancária.|
 
-|RF13. CRUD de Fornecedores|
+|RF13. Pagamentos Eletrônicos|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Facilitar a realização de pagamentos eletrônicos diretamente pelo sistema.|
+|Fontes: Contas a pagar, fornecedores.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Dados de pagamento (valor, conta bancária).|
+|Informações de saída: Confirmação de pagamento eletrônico.|
+|Requisitos não funcionais: Alta segurança nas transações, conformidade com regulamentações bancárias.|
 
-|RF14. CRUD de Fornecedores|
+|RF14. Importação de Extratos|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Integrar com sistemas bancários para importar extratos automaticamente.|
+|Fontes: Bancos.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Credenciais bancárias, período de extrato.|
+|Informações de saída: Extratos bancários importados.|
+|Requisitos não funcionais: Alta disponibilidade da integração, compatibilidade com múltiplos bancos.|
 
-|RF15. CRUD de Fornecedores|
+|RF15. Registro de Recebimentos e Pagamentos|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição:  Facilitar o registro e a conciliação de transações bancárias no sistema.|
+|Fontes: Bancos, clientes, fornecedores.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada:  Informações das transações bancárias.|
+|Informações de saída: Transações registradas e conciliadas.|
+|Requisitos não funcionais: Baixo tempo de resposta, segurança dos dados.|
