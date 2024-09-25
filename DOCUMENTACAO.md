@@ -140,34 +140,34 @@ graph TD
 
 |RF1. CRUD de Fornecedores|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Permitir a criação, edição, visualização e exclusão de fornecedores, com informações, como nome, CNPJ, e contato.|
+|Fontes: Departamento financeiro.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Nome do fornecedor, CNPJ, telefone, e-mail.|
+|Informações de saída: Lista de fornecedores, dados atualizados do fornecedor.|
+|Requisitos não funcionais: Tempo de resposta rápido para CRUD, segurança dos dados (criptografia).|
 
-|RF2. CRUD de Fornecedores|
+|RF2. CRUD de Despesas|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Criar, editar, visualizar e excluir despesas detalhadas, como data, valor, categoria e fornecedor vinculado.|
+|Fontes: Documentos fiscais, fornecedores.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Data, valor, categoria, fornecedor.|
+|Informações de saída: Relatórios de despesas, histórico de despesas por fornecedor.|
+|Requisitos não funcionais: Interface intuitiva, tempo de resposta rápido.|
 
-|RF3. CRUD de Fornecedores|
+|RF3. Pagamento de Contas|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Facilitar a execução de pagamentos de contas, com integração a sistemas bancários para conciliação automática.|
+|Fontes: Contas a pagar, fornecedores.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Conta a pagar, dados de pagamento (valor, data).|
+|Informações de saída: Confirmação de pagamento, extrato bancário conciliado|
+|Requisitos não funcionais: Alta disponibilidade, segurança (integração bancária segura).|
 
-|RF4. CRUD de Fornecedores|
+|RF4. CRUD de Clientes|
 |-----------------------|
-|Descrição: |
+|Descrição: criar, editar, visualizar e excluir informações de clientes.|
 |Fontes: |
 |Usuários: |
 |Informações de entrada: |
