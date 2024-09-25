@@ -168,56 +168,56 @@ graph TD
 |RF4. CRUD de Clientes|
 |-----------------------|
 |Descrição: criar, editar, visualizar e excluir informações de clientes.|
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Fontes: Clientes.|
+|Usuários: Funcionários do setor de vendas, financeiro, administradores.|
+|Informações de entrada: Nome, CNPJ/CPF, endereço, telefone, e-mail.|
+|Informações de saída: Lista de clientes, dados atualizados do cliente.|
+|Requisitos não funcionais: Segurança dos dados, conformidade com LGPD.|
 
-|RF5. CRUD de Fornecedores|
+|RF5. CRUD de Receitas|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Criar, editar, visualizar e excluir receitas com detalhes como data, valor, categoria e cliente.|
+|Fontes: Contratos, vendas realizadas.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Data, valor, categoria, cliente.|
+|Informações de saída: Relatórios de receitas.|
+|Requisitos não funcionais: Interface de fácil navegação, confiabilidade dos dados.|
 
-|RF6. CRUD de Fornecedores|
+|RF6. Registro de Pagamentos|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Permitir o registro e conciliação de pagamentos recebidos, com integração bancária.|
+|Fontes:  Bancos, clientes.|
+|Usuários: Funcionários do setor financeiro, administradores.|
+|Informações de entrada: Informações de recebimentos (valor, data).|
+|Informações de saída: Pagamentos registrados, conciliação bancária.|
+|Requisitos não funcionais: Segurança na integração bancária, velocidade na conciliação.|
 
-|RF7. CRUD de Fornecedores|
+|RF7. Visão Geral do Fluxo de Caixa|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Exibir um resumo em tempo real das entradas e saídas de caixa.|
+|Fontes: Registros de contas a pagar e a receber.|
+|Usuários: Administradores, gestores financeiros.|Precisão nos cálculos, interface amigável.
+|Informações de entrada: Dados financeiros consolidados (entradas e saídas).|
+|Informações de saída: Resumo financeiro com gráficos e tabelas.|
+|Requisitos não funcionais: Visualização clara, geração rápida dos dados.|
 
-|RF8. CRUD de Fornecedores|
+|RF8. Projeção de Fluxo de Caixa|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Permitir a criação de previsões de fluxo de caixa baseadas em lançamentos futuros.|
+|Fontes: Planejamentos financeiros, contratos futuros|
+|Usuários: Gestores financeiros, administradores.|
+|Informações de entrada: Lançamentos futuros de receitas e despesas.|
+|Informações de saída: Projeção detalhada de entradas e saídas futuras.|
+|Requisitos não funcionais: Precisão nos cálculos, interface amigável.|
 
-|RF9. CRUD de Fornecedores|
+|RF9. Geração de Relatórios|
 |-----------------------|
-|Descrição: |
-|Fontes: |
-|Usuários: |
-|Informações de entrada: |
-|Informações de saída: |
-|Requisitos não funcionais: |
+|Descrição: Gerar relatórios financeiros, como balanços patrimoniais e análises de fluxo de caixa.|
+|Fontes: Dados de receitas, despesas e balanço contábil.|
+|Usuários: Gestores financeiros, administradores, auditores.|
+|Informações de entrada: Período do relatório, tipos de relatório.|
+|Informações de saída: Relatórios financeiros completos.|
+|Requisitos não funcionais: Formatação padrão de relatórios, facilidade de leitura.|
 
 |RF10. CRUD de Fornecedores|
 |-----------------------|
