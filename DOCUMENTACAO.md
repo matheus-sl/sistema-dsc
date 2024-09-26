@@ -272,3 +272,125 @@ graph TD
 |Informações de entrada:  Informações das transações bancárias.|
 |Informações de saída: Transações registradas e conciliadas.|
 |Requisitos não funcionais: Baixo tempo de resposta, segurança dos dados.|
+
+# Modelo Conceitual
+
+```mermaid
+erDiagram
+    FORNECEDORES {
+        int id_fornecedor PK
+        string nome_fornecedor
+        string cnpj
+        string endereco
+        string telefone
+        string email
+        datetime created_at
+        datetime updated_at
+    }
+    
+    DESPESAS {
+        int id_despesa PK
+        string descricao
+        date data_despesa
+        decimal valor
+        string categoria
+        datetime created_at
+        datetime updated_at
+        int id_fornecedor FK
+    }
+    
+    PAGAMENTOS {
+        int id_pagamento PK
+        date data_pagamento
+        decimal valor_pago
+        string metodo_pagamento
+        boolean status_conciliacao
+        datetime created_at
+        datetime updated_at
+        int id_despesa FK
+        int id_conta_bancaria FK
+    }
+    
+    CLIENTES {
+        int id_cliente PK
+        string nome_cliente
+        string cnpj_cpf
+        string endereco
+        string telefone
+        string email
+        datetime created_at
+        datetime updated_at
+    }
+    
+    RECEITAS {
+        int id_receita PK
+        string descricao
+        date data_receita
+        decimal valor
+        string categoria
+        datetime created_at
+        datetime updated_at
+        int id_cliente FK
+    }
+    
+    RECEBIMENTOS {
+        int id_recebimento PK
+        date data_recebimento
+        decimal valor_recebido
+        string metodo_recebimento
+        boolean status_conciliacao
+        datetime created_at
+        datetime updated_at
+        int id_receita FK
+        int id_conta_bancaria FK
+    }
+    
+    FLUXO_CAIXA {
+        int id_fluxo PK
+        date data_fluxo
+        decimal saldo_inicial
+        decimal saldo_final
+        decimal projecao_entradas
+        decimal projecao_saidas
+        datetime created_at
+        datetime updated_at
+    }
+    
+    RELATORIOS {
+        int id_relatorio PK
+        string tipo_relatorio
+        date periodo_inicio
+        date periodo_fim
+        blob arquivo_pdf
+        blob arquivo_excel
+        datetime created_at
+        datetime updated_at
+    }
+    
+    CONTAS_BANCARIAS {
+        int id_conta_bancaria PK
+        string nome_banco
+        string agencia
+        string numero_conta
+        decimal saldo_atual
+        datetime created_at
+        datetime updated_at
+    }
+    
+    EXTRATOS_BANCARIOS {
+        int id_extrato PK
+        date data_extrato
+        blob arquivo_extrato
+        datetime created_at
+        datetime updated_at
+        int id_conta_bancaria FK
+    }
+    
+    FORNECEDORES ||--o{ DESPESAS : fornece
+    CLIENTES ||--o{ RECEITAS : possui
+    CONTAS_BANCARIAS ||--o{ PAGAMENTOS : realiza
+    CONTAS_BANCARIAS ||--o{ RECEBIMENTOS : recebe
+    CONTAS_BANCARIAS ||--o{ EXTRATOS_BANCARIOS : gera
+    DESPESAS ||--o{ PAGAMENTOS : paga
+    RECEITAS ||--o{ RECEBIMENTOS : registra
+```
